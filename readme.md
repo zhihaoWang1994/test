@@ -12,7 +12,7 @@
 ## 进入自己专用的目录通过git拉取示例代码
 
 `https://github.com/zhihaoWang1994/test.git`
-(因为有数据集, 所以下载速度慢)
+
 
 
 ## docker配置文件(Dockerfile)说明
