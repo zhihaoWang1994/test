@@ -8,6 +8,9 @@
 ## 进入自己专用的目录通过git拉取示例代码
 
 `git clone https://github.com/zhihaoWang1994/test.git`
+`下载时需提供我的用户名和密码：`
+`zhihaoWang1994`
+`wzh1994929qwe`
 
 
 
@@ -58,7 +61,7 @@ RUN mkdir /workspace
 
 ## 使用镜像
 
-`docker run -it docker-django_web`
+`docker run -it test_bawei`
 
 -it 进入容器的命令行
 
@@ -66,45 +69,38 @@ RUN mkdir /workspace
 
 `conda list`
 
-## 安装TensorFlow
+## 安装各种依赖
 
-1. 添加清华的镜像库提高下载速度
 
-```
-conda config --addchannels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
-conda config --setshow_channel_urls yes
-```
-
-2. 用anaconda创建环境
+1. 用anaconda创建环境
 
 ```
-conda create -n tensorflow python=3.6
+conda create -n face_test python=3.6
 ```
 
-3. 激活TensorFlow
+3. 激活虚拟环境
 
-`activate tensorflow` (或者前边加 source)
-
-4. 正式安装TensorFlow
+`activate test_face` (或者前边加 source)
 
 ```
-#CPU版本
+pip install dlib==19.17.0
+pip install numpy==1.15.1
+pip install scikit-image==0.14.0
 
-pip install --upgrade tensorflow
+```
+##使用步骤
+```
+1.在labels中添加被测试人的姓名，性别等信息，逐行添加
+2.python get_data.py
+3.python features_to_csv.py
+4.python face_test.py
+这样就得到了测试的最终及结果
 
-#GPU版本
-
-pip install --upgrade tensorflow-gpu
+```
+##说明
+```
+标准正脸的准确率检测，本系统可达99%以上
 
 ```
 
-5. 测试是否成功安装
 
-```
-python
-
-import tensorflow as tf
-```
-没报错即成功
-
-6. 同样的方法, 安装其它依赖模块
