@@ -11,7 +11,7 @@
 
 ## 进入自己专用的目录通过git拉取示例代码
 
-`https://github.com/zhihaoWang1994/test.git`
+`git clone https://github.com/zhihaoWang1994/test.git`
 
 
 
