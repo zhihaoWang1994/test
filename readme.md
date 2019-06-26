@@ -94,7 +94,7 @@ pip install scikit-image==0.14.0
 2.python get_data.py
 3.python features_to_csv.py
 4.python face_test.py
-这样就得到了测试的最终及结果
+这样就得到了测试的最终结果
 
 ```
 ##说明
