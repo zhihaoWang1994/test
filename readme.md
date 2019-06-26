@@ -4,7 +4,7 @@
 
 `ssh root@39.97.224.231`
 
-## 进入AIDockerProject目录
+## 进入DFRAS目录
 
 `cd DFRAS && mkdir 自己的项目名字`
 
