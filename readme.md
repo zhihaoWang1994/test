@@ -6,12 +6,12 @@
 
 ## 进入AIDockerProject目录
 
-`cd AIDockerProject && mkdir 自己的项目名字`
+`cd DFRAS && mkdir 自己的项目名字`
 
 
 ## 进入自己专用的目录通过git拉取示例代码
 
-`git clone https://github.com/yumingvvv111/AIDocker.git`
+`https://github.com/zhihaoWang1994/test.git`
 (因为有数据集, 所以下载速度慢)
 
 
