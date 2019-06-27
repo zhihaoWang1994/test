@@ -53,6 +53,9 @@ RUN mkdir /workspace
 
 ```
 
+`cd test`
+
+
 ## 构建docker镜像
 
 `make build`
