@@ -67,7 +67,7 @@ def pre_work_del_old_face_folders():
 # 在之前 person_x 的序号按照 person_x+1 开始录入 / start from person_x+1
 if os.listdir("data/data_from_camera/"):
     # 获取已录入的最后一个人脸序号 / get the num of latest person
-    person_list = os.listdir("data/data_faces_from_camera/")
+    person_list = os.listdir("data/data_from_camera/")
     person_num_list = []
     for person in person_list:
         person_num_list.append(int(person.split('_')[-1]))
