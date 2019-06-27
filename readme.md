@@ -80,7 +80,7 @@ conda create -n face_test python=3.6
 
 3. 激活虚拟环境
 
-`activate test_face` (或者前边加 source)
+`source activate test_face` 
 
 ```
 pip install dlib==19.17.0
