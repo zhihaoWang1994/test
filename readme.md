@@ -8,9 +8,6 @@
 ## 进入自己专用的目录通过git拉取示例代码
 
 `git clone https://github.com/zhihaoWang1994/test.git`
-`下载时需提供我的用户名和密码：`
-`zhihaoWang1994`
-`wzh1994929qwe`
 
 
 
