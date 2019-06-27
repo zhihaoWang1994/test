@@ -102,5 +102,15 @@ pip install scikit-image==0.14.0
 标准正脸的准确率检测，本系统可达99%以上
 
 ```
+#6保存项目
+```
+执行exit退出docker容器 然后输入docker ps -a查看刚才退出的是哪个容器, 复制它的id 执行docker commit 80cdc99d89dd new_container:tag1, 其中80cdc99d89dd就是容器的id号, 自行替换. 后边的参数分别是容器名和标签名
 
+```
+#7再次进入项目不需要重新安装环境
+```
+只用执行docker images查看上一步创建的新镜像名'new_container', 复制他的id号, 假如是12345678
 
+然后docker run -it 12345678 则再次进入容器, 直接运行项目而不需再次安装依赖
+
+```
